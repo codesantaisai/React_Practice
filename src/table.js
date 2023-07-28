@@ -18,9 +18,9 @@ const TableHeading = ()=>{
 
 const TableBody = (props)=>{
     const {charactersData}= props;
-    const rows =charactersData.map((character)=>{
+    const rows =charactersData.map((character,index)=>{
         return(
-            <tr>
+            <tr key ={index}>
                 <td>{character.name}</td>
                 <td>{character.age}</td>
             </tr>
